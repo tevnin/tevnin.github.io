@@ -8,25 +8,28 @@ body {
 h1, h2 {
     color: #1e3f3f;
     font-family: 'Playfair Display', serif;
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.25;
 }
 
 h2 {
-    font-size: 28.0pt;
+    font-size: 2rem;
     margin-bottom: 0;
 }
 
 p, li {
     color: #1c1c1c;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    /* font-size: 12px; */
     line-height: 1.25;
 
     /* .emoji{
         font-family: 'Noto Color Emoji', sans-serif;
     } */
+}
+span.emoji{
+    font-family: 'Noto Color Emoji', sans-serif;
+    font-size: 120%;
 }
 
 p.tag {
