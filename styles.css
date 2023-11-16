@@ -1,12 +1,12 @@
 body {
     margin: 0;
     padding: 100px;
-    background-color: #ebe0d7;
+    background-color: #fcfbfa;
 
 }
 
 h1, h2 {
-    color: #1e3f3f;
+    color: #0D093B;
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 600;
@@ -36,6 +36,10 @@ p.tag {
     font-size: 14px;
     font-weight: 600;
     padding: 0 20px 0 0;
+}
+a {
+    /* color: #590696; Looks like a visited link */
+    color: #C70A80;
 }
 div.project {
     border-bottom: 1px #1e3f3f solid;
