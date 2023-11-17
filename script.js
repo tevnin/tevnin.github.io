@@ -6,3 +6,9 @@
 // .then(html => {
 //   document.getElementById('header-placeholder').innerHTML = html;
 // });
+
+//toggle the navigation menu
+function toggleMenu() {
+  const nav = document.querySelector('nav');
+  nav.classList.toggle('active');
+}
