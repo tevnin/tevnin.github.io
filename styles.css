@@ -17,7 +17,7 @@ header {
 .hamburger-menu {
     height: 64px;
     width: 64px;
-    background-image: url('assets/noun-hamburger.png');
+    background-image: url('assets/noun-hamburger-navy.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,6 +30,16 @@ nav {
     /* position: absolute;
     top: 60px;
     right: 0; */
+    width: 250px; /* Set the width of the overlay */
+    height: 100%; /* Make the overlay cover the entire screen height */
+    position: fixed;
+    /* top: 0; */
+    right: -250px; /* Initially position the overlay off-screen */
+    background-color: #0D093B; /* Replace with your preferred background color */
+    overflow-x: hidden;
+    transition: 0.5s; /* Add a smooth transition effect */
+    z-index: 1; /* Set the overlay below the content but above the hamburger menu */
+
 }
 
 nav.active {
@@ -37,6 +47,7 @@ nav.active {
     /* flex-direction: row-reverse; */
     justify-content: flex-end;
     flex-wrap: nowrap;
+    right: 100px; /* Move the overlay to the screen */
 }
 
 nav ul {
@@ -51,13 +62,15 @@ nav ul {
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 8px 20px;
     text-align: right;
+    
 }
 
 nav a {
     text-decoration: none;
     /* font-weight: bold; */
+    color: #fcfbfa;
 }
 
 
@@ -95,7 +108,7 @@ a {
     color: #C70A80;
 }
 
-div.project {
+div.project, div.detail {
     border-bottom: 1px #1e3f3f solid;
     padding-bottom: 20px;
     
@@ -107,6 +120,24 @@ iframe {
     width: 100%;
     height: 450px;
 }
+
+div.detail {
+    /* width: 100%;
+    background-color: #fafafa; */
+    padding-top: 20px;
+}
+div.img-group {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #FAFAFA;
+
+    /* img {
+        width: inherit;
+        height: inherit;
+    } */
+}
   
 
 /* Media query for screens with a maximum width of 767px (typical for mobile devices) */
@@ -117,6 +148,16 @@ iframe {
     }
     iframe {
         height: 300px;
+    }
+    nav.active {
+        display: flex; /* Show the navigation when active (toggled) */
+        /* flex-direction: row-reverse; */
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        right: 25px; /* Move the overlay to the screen */
+        top: 0;
+        width: 100%;
+        height: 100%;
     }
 
 }
