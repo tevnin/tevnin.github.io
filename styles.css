@@ -117,8 +117,8 @@ div.project, div.detail {
     }
 }
 iframe {
-    width: 100%;
-    height: 450px;
+   /*width: 100%;*/
+    /*height: 450px;*/
 }
 
 div.detail {
@@ -126,18 +126,39 @@ div.detail {
     background-color: #fafafa; */
     padding-top: 20px;
 }
-div.img-group {
+
+.img-group {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
     background-color: #FAFAFA;
-
-    /* img {
-        width: inherit;
-        height: inherit;
-    } */
 }
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox-image{
+    cursor: pointer;
+}
+.lightbox img {
+    max-width: 98%;
+    max-height: 98%;
+}
+.lightbox.active {
+    display: flex;
+}
+
+
   
 
 /* Media query for screens with a maximum width of 767px (typical for mobile devices) */
