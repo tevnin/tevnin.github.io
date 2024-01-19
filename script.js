@@ -47,3 +47,25 @@ lightboxImages.forEach((image) => {
 // Attach click event listener to close the lightbox
 lightbox.addEventListener('click', closeLightbox);
 
+// Passwords
+function checkPassDS() {
+  var password = prompt("Please enter the password:");
+  // Check the entered password (you should validate on the server side)
+  if (password === "letsg024") {
+    window.location.href = "design-system.html";
+  } else {
+    alert("Incorrect password. Access denied.");
+    // Optionally, redirect to another page or take further action.
+  }
+}
+function checkPassEX() {
+  var password = prompt("Please enter the password:");
+  // Check the entered password (you should validate on the server side)
+  if (password === "letsg024") {
+    window.location.href = "zero-to-one.html";
+  } else {
+    alert("Incorrect password. Access denied.");
+    // Optionally, redirect to another page or take further action.
+  }
+}
+

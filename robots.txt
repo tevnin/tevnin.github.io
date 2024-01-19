@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /portfolio/design-system.html
+Disallow: /portfolio/zero-to-one.html
