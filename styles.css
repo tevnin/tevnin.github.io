@@ -88,11 +88,13 @@ h2 {
     margin-bottom: 0;
 }
 
-p, li {
+p, li, figcaption {
     color: #1c1c1c;
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     line-height: 1.25;
-
+}
+figcaption {
+    padding-bottom: 0.5em;
 }
 span.emoji{
     font-family: 'Noto Color Emoji', sans-serif;
@@ -104,6 +106,7 @@ p.tag {
     font-weight: 600;
     padding: 0 20px 0 0;
 }
+
 a {
     /* color: #590696; Looks like a visited link */
     color: #C70A80;
@@ -119,6 +122,12 @@ button {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     cursor: pointer;
 
+}
+
+figure {
+    width: 30%;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
 div.project, div.detail {
@@ -146,6 +155,10 @@ div.detail {
     justify-content: space-between;
     align-items: flex-start;
     background-color: #FAFAFA;
+}
+
+.img-group div {
+
 }
 
 /* Lightbox styles */

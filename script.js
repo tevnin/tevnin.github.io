@@ -68,4 +68,14 @@ function checkPassEX() {
     // Optionally, redirect to another page or take further action.
   }
 }
+function checkPassB2B() {
+  var password = prompt("Please enter the password:");
+  // Check the entered password (you should validate on the server side)
+  if (password === "letsg024") {
+    window.location.href = "profile-mgmt.html";
+  } else {
+    alert("Incorrect password. Access denied.");
+    // Optionally, redirect to another page or take further action.
+  }
+}
 
