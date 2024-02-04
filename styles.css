@@ -93,8 +93,11 @@ p, li, figcaption {
     /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
     line-height: 1.25;
 }
+
 figcaption {
     padding-bottom: 0.5em;
+    font-size: 0.8em;
+
 }
 span.emoji{
     font-family: 'Noto Color Emoji', sans-serif;
@@ -128,6 +131,7 @@ figure {
     width: 30%;
     margin-inline-start: 0;
     margin-inline-end: 0;
+    background-color: none;
 }
 
 div.project, div.detail {
@@ -155,10 +159,7 @@ div.detail {
     justify-content: space-between;
     align-items: flex-start;
     background-color: #FAFAFA;
-}
-
-.img-group div {
-
+    padding: 20px 0 20px 0;
 }
 
 /* Lightbox styles */
