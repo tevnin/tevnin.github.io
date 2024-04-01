@@ -27,51 +27,25 @@ header {
 }
 
 nav {
-    display: none; /* Hide the navigation for smaller screens */
-    /* position: absolute;
-    top: 60px;
-    right: 0; */
-    width: 250px; /* Set the width of the overlay */
-    height: 100%; /* Make the overlay cover the entire screen height */
-    position: fixed;
-    /* top: 0; */
-    right: -250px; /* Initially position the overlay off-screen */
-    background-color: #0D093B; /* Replace with your preferred background color */
-    overflow-x: hidden;
-    transition: 0.5s; /* Add a smooth transition effect */
-    z-index: 1; /* Set the overlay below the content but above the hamburger menu */
+
 
 }
 
 nav.active {
-    display: flex; /* Show the navigation when active (toggled) */
-    /* flex-direction: row-reverse; */
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    right: 100px; /* Move the overlay to the screen */
+
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    /* margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-end; */
+
 }
 
 nav li {
-    margin: 8px 20px;
-    text-align: right;
+
     
 }
 
 nav a {
-    text-decoration: none;
-    /* font-weight: bold; */
-    color: #fcfbfa;
+
 }
 
 
@@ -142,10 +116,6 @@ div.project, div.detail {
         display: flex;
     }
 }
-iframe {
-   /*width: 100%;*/
-    /*height: 450px;*/
-}
 
 div.detail {
     /* width: 100%;
@@ -185,7 +155,9 @@ div.detail {
     display: flex;
 }
 
-
+div.divider {
+    border-top: #e5e4e4 solid;
+}
   
 
 /* Media query for screens with a maximum width of 767px (typical for mobile devices) */

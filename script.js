@@ -8,10 +8,10 @@
 // });
 
 //toggle the navigation menu
-function toggleMenu() {
-  const nav = document.querySelector('nav');
-  nav.classList.toggle('active');
-}
+// function toggleMenu() {
+//   const nav = document.querySelector('nav');
+//   nav.classList.toggle('active');
+// }
 
 //LIGHTBOX IMAGES
 // Get all elements with the class "lightbox-image"
